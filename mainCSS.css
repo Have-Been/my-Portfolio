@@ -1,0 +1,259 @@
+body {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-template-areas:
+        "ma sb sb sb sb"
+        "ma pb pb pb pb"
+        "ma pb pb pb pb";
+}
+
+.profile {
+    background-color: white;
+    border: 2px solid blue;
+    height: 90%;
+    width: 300px;
+    margin-left: 30px;
+    border-radius: 3%;
+    margin-top: 40px;
+    grid-area: ma;
+}
+
+.idPhoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.idPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.13);
+    object-position: center 30%;
+}
+
+.myName {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line {
+    border: 1px solid blue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.contact li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+
+    list-style: none;
+    padding-left: 25px;
+    background-repeat:no-repeat;
+    background-position: left center;
+}
+
+#phone {
+    background-image: url("images/phone_icon.png");
+    background-size: 16px 16px;
+}
+
+#email {
+    background-image: url("images/email_icon.png");
+    background-size: 16px 16px;
+}
+
+#git {
+    background-image: url("images/github_icon.png");
+    background-size: 18px 18px;
+}
+
+#velog {
+    background-image: url("images/blog_icon.png");
+    background-size: 16px 16px; 
+}
+
+.introduction {
+    grid-area: sb;
+    margin-left: 60px;
+}
+
+.introduction img{
+    width: 30px;
+    height: 30px;
+}
+
+.introduction h4{
+    margin-left: 26px;
+    font-weight: 400;
+}
+
+.portfolio {
+    grid-area: pb;
+    margin-left: 20px;
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.card1 { background: #ff6b6b; }
+.card2 { background: #4ecdc4; }
+.card3 { background: #1a535c; }
+
+/* 흐림 효과 */
+.carousel-wrapper {
+    display: flex;
+    gap: 10px; /* 카드와 버튼 간격 */
+}
+
+.carousel-track {
+    display: flex;
+}
+
+.card {
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+    transform: scale(0.9);
+    background-color: white;
+    border: 1px solid blue;
+}
+
+.card img {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 28px;
+    margin-top: 20px;
+}
+
+.cardContact {
+    margin-left: 28px;
+}
+
+.card h3 {
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.card span {
+    margin-right: 6px;
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.team {
+    background-color: #ff6b6b;
+    color: white;
+    width: 80px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.count {
+    background-color: #4ecdc4;
+    color: white;
+    width: 55px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.fe {
+    background-color: #CBA0FF;
+    color: white;
+    width: 70px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.be {
+    background-color: #A8E6CF;
+    color: white;
+    width: 65px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.date {
+    background-color: #B3E5FC;
+    color: white;
+    width: 160px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.card button {
+    margin-left: 50px;
+    /* margin-top: 40px; */
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card h4 {
+    margin: 0;
+}
+
+.card.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: white;
+    height: 50px;
+    margin-top: 120px;
+}
+
+.card3 button {
+    margin-top: 30px;
+}
